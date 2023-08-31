@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminM.master.cs" Inherits="EmployeeManagement.AdminM" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            height: 150px;
+            text-align: center;
+        }
+        .auto-style3 {
+            height: 256px;
+        }
+        .auto-style4 {
+            width: 641px;
+            height: 168px;
+        }
+        .auto-style5 {
+            width: 627px;
+            height: 160px;
+        }
+        .auto-style6 {
+            height: 256px;
+            width: 293px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table class="auto-style1">
+            <tr>
+                <td class="auto-style2" colspan="2">
+                    <img alt="" class="auto-style4" src="Content/admin-banner-right.jpg" /></td>
+            </tr>
+            <tr>
+                <td class="auto-style6">
+                    <asp:Menu ID="Menu2" runat="server">
+                        <Items>
+                            <asp:MenuItem Text="All Projects" Value="All Projects" NavigateUrl="~/AllProjects.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Assign Project" Value="Assign Project" NavigateUrl="~/AssignProject.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Completed Projects" Value="Completed Projects" NavigateUrl="~/CompletedProjects.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="PaymentDetails" Value="Payslip" NavigateUrl="~/paymentDetails.aspx"></asp:MenuItem>
+                        </Items>
+                        <StaticMenuItemStyle VerticalPadding="20px" />
+                    </asp:Menu>
+&nbsp;</td>
+                <td class="auto-style3">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <p class="auto-style5">
+                    <br />
+                </p>
+            </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+        <div>
+        </div>
+    </form>
+</body>
+</html>
